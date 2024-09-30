@@ -52,7 +52,7 @@ public class ReadXMLController {
                     "Age",
                     dataset);
 
-            ChartUtils.saveChartAsJPEG(new File("C://Users/shash/Shashank/lineChart.jpg"), lineChart, 800, 600);
+            ChartUtils.saveChartAsJPEG(new File("src/main/resources/lineChart.jpg"), lineChart, 800, 600);
 
 //======================================>> Creating BarChart <<======================================
 
@@ -60,7 +60,7 @@ public class ReadXMLController {
                     "Name",
                     "Age",
                     dataset);
-            ChartUtils.saveChartAsJPEG(new File("C://Users/shash/Shashank/barChart.jpg"), barChart, 800, 600);
+            ChartUtils.saveChartAsJPEG(new File("src/main/resources/barChart.jpg"), barChart, 800, 600);
 
             DefaultPieDataset<String> pieDataSet = new DefaultPieDataset<>();
             for(Employee employee : empList)
@@ -76,7 +76,7 @@ public class ReadXMLController {
                     true,
                     true,
                     false);
-            ChartUtils.saveChartAsJPEG(new File("C://Users/shash/Shashank/pieChart.jpg"), pieChart, 800, 600);
+            ChartUtils.saveChartAsJPEG(new File("src/main/resources/pieChart.jpg"), pieChart, 800, 600);
 
         } catch (Exception e) {
             throw new RuntimeException(e);
